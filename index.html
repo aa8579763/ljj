@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<style>
+		
+			
+
+			
+			.img1{
+				/*饱和度*/
+				-webkit-filter: saturate(5) blur(2px) grayscale(1);
+			}
+			
+			.img2{
+				animation: A0 5s;
+			}
+			
+			
+			@keyframes A0{
+				0%{
+					-webkit-filter: grayscale(1);
+				}
+				40%{
+					-webkit-filter: grayscale(0.8);
+				}
+				60%{
+					-webkit-filter: grayscale(0.4);
+				}
+				80%{
+					-webkit-filter: grayscale(0.2);
+					
+				}
+				100%{
+					-webkit-filter: grayscale(0);
+				}
+			}
+			
+			
+			
+			.img3{
+				-webkit-filter: invert(1);
+				animation: A1 5s;
+			}
+			
+			@keyframes A1{
+				from{
+					-webkit-filter: invert(1);
+				}
+				to{
+					-webkit-filter: invert(0);
+				}
+			}
+			
+			.img4{
+				animation: A2 5s;
+			}
+			
+			
+			@keyframes A2{
+				0%{
+					-webkit-filter: brightness(0) blur(10px);
+				}
+				40%{
+					-webkit-filter: brightness(0.2) blur(8px);
+				}
+				60%{
+					-webkit-filter: brightness(0.4) blur(6px);
+				}
+				80%{
+					-webkit-filter: brightness(0.6) blur(4px);
+					
+				}
+				100%{
+					-webkit-filter: brightness(0.8) blur(2px);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<img class="img1" src="img/AA.jfif"/>
+		<img class="img2" src="img/AA.jfif"/>
+		<img class="img3" src="img/AA.jfif"/>
+		<img class="img4" src="img/AA.jfif"/>
+
+Z		
+	</body>
+</html>
